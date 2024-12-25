@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: 'circular-web';
+        src: url(/awwwards_public/public/fonts/circularweb-book.woff2) format('woff2')
+    }
+}
