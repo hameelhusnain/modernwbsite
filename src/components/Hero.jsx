@@ -7,7 +7,7 @@ const Hero = () => {
     const [isLoading, setIsLoading] = useState(initialState: true);
     const [loadedVideo, setLoadedVideo] = useState(initialState: 0);
      const totalVideos = 4;
-     const nextVdRef = useRef(initialValue: null);
+     const nextVdRef = useRef(initialValue, null);
 
     const handleMiniVdClick = () => {
         setHasClicked( value: true);
