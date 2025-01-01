@@ -8,6 +8,8 @@ This project is a simple website that showcases a few features of React and Vite
 
 The video  tutorial of this website is also avaliable on YouTube. 
 Channel: JavascriptMastery
+Video Title: Build a Modern Website with React, Vite, and Tailwind CSS
+
 @hameelhusnain 
 
 
