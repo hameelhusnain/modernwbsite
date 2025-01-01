@@ -1,11 +1,6 @@
-import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
-import { ScrollTrigger } from "gsap/all";
-import { TiLocationArrow } from "react-icons/ti";
-import { useEffect, useRef, useState } from "react";
+import { useRef } from "react";
+import { useState } from "react"
 
-import Button from "./Button";
-import VideoPreview from "./VideoPreview";
 const Hero = () => {
     const [currentIndex, setCurrentIndex] = useState( initialState: 1);
     const [hasClicked, setHasClicked] = useState( initialStat: false);
