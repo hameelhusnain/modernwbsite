@@ -1,18 +1,23 @@
-import { useRef } from "react";
-import { useState } from "react"
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/all";
+import { TiLocationArrow } from "react-icons/ti";
+import { useEffect, useRef, useState } from "react";
 
+import Button from "./Button";
+import VideoPreview from "./VideoPreview";
 const Hero = () => {
-    const [currentIndex, setCurrentIndex] = useState( initialState, 1);
-    const [hasClicked, setHasClicked] = useState( initialStat, false);
-    const [isLoading, setIsLoading] = useState(initialState, true);
-    const [loadedVideo, setLoadedVideo] = useState(initialState, 0);
+    const [currentIndex, setCurrentIndex] = useState( initialState: 1);
+    const [hasClicked, setHasClicked] = useState( initialStat: false);
+    const [isLoading, setIsLoading] = useState(initialState: true);
+    const [loadedVideo, setLoadedVideo] = useState(initialState: 0);
      const totalVideos = 4;
-     const nextVideoRef = useRef(initialValue, null);
+     const nextVideoRef = useRef(initialValue: null);
 
     const handleMiniVdClick = () => {
-        setHasClicked( value, true);
+        setHasClicked( value: true);
 
-        setCurrentIndex(value, (previndex) => previndex + 1);
+        setCurrentIndex(value: (previndex) => previndex + 1);
         
     const getVideoSrc = (index) => `videos/hero-${index}.mp4`;
 
@@ -26,11 +31,12 @@ const Hero = () => {
                     <div onClick={handleMiniVdClick} className="origin-center">
                         <video 
                         ref={nextVideoRef}
-                        src={getVideoSrc( index, currentIndex + 1)}
+                        src={getVideoSrc( index: currentIndex + 1)}
                         loop
                         muted
                         id="current-video"
-                        className="size-64 origin-center"
+                        className="size-64 origin-center scale-150 object-cover object-center"
+                        onLoadedData={handelVideoLoaded}
                         /> 
                     </div>
 
