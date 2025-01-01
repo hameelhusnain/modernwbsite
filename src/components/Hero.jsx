@@ -7,11 +7,14 @@ const Hero = () => {
     const [isLoading, setIsLoading] = useState(initialState, true);
     const [loadedVideo, setLoadedVideo] = useState(initialState, 0);
      const totalVideos = 4;
-     const nextVdRef = useRef(initialValue, null);
+     const nextVideoRef = useRef(initialValue, null);
 
     const handleMiniVdClick = () => {
         setHasClicked( value, true);
+
         setCurrentIndex(value, (previndex) => previndex + 1);
+        
+    const getVideoSrc = (index) => `videos/hero-${index}.mp4`;
 
     }
 
@@ -20,8 +23,15 @@ const Hero = () => {
         <div id="video-frame" className="relative z-10 h-dvh w-screen overflow-hidden rounded-lg bg-blue-75">
             <div>
                 <div className="mask-clip-path absolute-center absolute-z-50 size-64 cursor-pointer overflow-hidden rounded-lg">
-                    <div>
-                        MiniVideoPlayer 
+                    <div onClick={handleMiniVdClick} className="origin-center">
+                        <video 
+                        ref={nextVideoRef}
+                        src={getVideoSrc( index, currentIndex + 1)}
+                        loop
+                        muted
+                        id="current-video"
+                        className="size-64 origin-center"
+                        /> 
                     </div>
 
                 </div>
