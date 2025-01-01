@@ -11,7 +11,7 @@ const Hero = () => {
 
     const handleMiniVdClick = () => {
         setHasClicked( value, true);
-        setcurrentIndex
+        setCurrentIndex(value:(previndex) => previndex + 1);
 
     }
 
