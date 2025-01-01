@@ -2,15 +2,15 @@ import { useRef } from "react";
 import { useState } from "react"
 
 const Hero = () => {
-    const [currentIndex, setCurrentIndex] = useState( initialState: 1);
-    const [hasClicked, setHasClicked] = useState( initialState: false);
-    const [isLoading, setIsLoading] = useState(initialState: true);
-    const [loadedVideo, setLoadedVideo] = useState(initialState: 0);
+    const [currentIndex, setCurrentIndex] = useState( initialState, 1);
+    const [hasClicked, setHasClicked] = useState( initialStat, false);
+    const [isLoading, setIsLoading] = useState(initialState, true);
+    const [loadedVideo, setLoadedVideo] = useState(initialState, 0);
      const totalVideos = 4;
      const nextVdRef = useRef(initialValue, null);
 
     const handleMiniVdClick = () => {
-        setHasClicked( value: true);
+        setHasClicked( value, true);
         setcurrentIndex
 
     }
