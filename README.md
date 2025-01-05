@@ -10,7 +10,7 @@ The video  tutorial of this website is also avaliable on YouTube.
 Channel: JavascriptMastery
 Video Title: Build a Modern Website with React, Vite, and Tailwind CSS.
 
-@hameelhusnain 
+Instagram: @hameelhusnain 
 
 Phone: +92-328-7147-399
 
