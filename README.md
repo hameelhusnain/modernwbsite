@@ -1,6 +1,6 @@
 # React + Vite + Tailwindcss
 
-A modern website showcasing cool animations built with the latest technologies including React, Vite, and Tailwind CSS.
+A modern website showcasing cool animations built with the latest technologies including React, Vite, and Tailwind CSS and other latest tech satcks.
 
 
 An Awward Winning Website made with React, Vite, Tailwindcss and JavaScript. 
