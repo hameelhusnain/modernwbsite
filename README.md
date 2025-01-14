@@ -6,7 +6,7 @@ Build a visually captivating website inspired by Zentry, featuring scroll-trigge
 
 **Client:** React, Redux, TailwindCSS
 
-**Server:** Node, Express
+**Server:** Node, Npm, Express
 
 
 ## Features
